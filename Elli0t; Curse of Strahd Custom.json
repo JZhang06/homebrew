@@ -1,0 +1,582 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "CurseofStrahdCustom",
+                "abbreviation": "COSC",
+                "full": "Curse of Strahd Custom",
+                "url": "https://github.com/JZhang06/homebrew",
+                "authors": [
+                    "Elli0t"
+                ]
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0
+    },
+    "monster": [
+        {
+            "name": "Druid Assailant",
+            "source": "CurseofStrahdCustom",
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": [
+                    "any race"
+                ]
+            },
+            "alignment": [
+                "A"
+            ],
+            "ac": [
+                11,
+                {
+                    "ac": 16,
+                    "condition": "with {@spell barkskin}",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "average": 27,
+                "formula": "5d8 + 5"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 10,
+            "dex": 12,
+            "con": 13,
+            "int": 12,
+            "wis": 15,
+            "cha": 11,
+            "skill": {
+                "medicine": "+4",
+                "nature": "+3",
+                "perception": "+4"
+            },
+            "passive": 14,
+            "languages": [
+                "Druidic plus any two languages"
+            ],
+            "cr": "2",
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
+                    ],
+                    "spells": {
+                        "0": {
+                            "spells": [
+                                "{@spell druidcraft}",
+                                "{@spell thorn whip}",
+                                "{@spell shillelagh}"
+                            ]
+                        },
+                        "1": {
+                            "slots": 4,
+                            "spells": [
+                                "{@spell earth tremor|xge}",
+                                "{@spell longstrider}",
+                                "{@spell healing word}",
+                                "{@spell thunderwave}"
+                            ]
+                        },
+                        "2": {
+                            "slots": 3,
+                            "spells": [
+                                "{@spell darkvision}",
+                                "{@spell barkskin}"
+                            ]
+                        }
+                    },
+                    "ability": "wis"
+                }
+            ],
+            "action": [
+                {
+                    "name": "Quarterstaff",
+                    "entries": [
+                        "{@atk mw} {@hit 2} to hit ({@hit 4} to hit with shillelagh), reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage with shillelagh or if wielded with two hands."
+                    ]
+                }
+            ],
+            "soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/142/druid.mp3",
+            "altArt": [
+                {
+                    "name": "Demonic Druid",
+                    "source": "MTF",
+                    "page": 29
+                }
+            ],
+            "languageTags": [
+                "DU",
+                "X"
+            ],
+            "damageTags": [
+                "B"
+            ],
+            "spellcastingTags": [
+                "CD"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "fluff": {
+                "name": "Druid Assailant",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "A variation on druids, these assailants are front line fighters."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/MM/Druid.jpg"
+                        }
+                    }
+                ]
+            },
+            "tokenUrl": "https://5e.tools/img/MM/Druid.png?v=1.99.2"
+        },
+        {
+            "name": "Druid Naturalist",
+            "source": "CurseofStrahdCustom",
+            "size": "M",
+            "type": {
+                "type": "humanoid",
+                "tags": [
+                    "any race"
+                ]
+            },
+            "alignment": [
+                "A"
+            ],
+            "ac": [
+                11
+            ],
+            "hp": {
+                "average": 27,
+                "formula": "5d8 + 5"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 10,
+            "dex": 12,
+            "con": 13,
+            "int": 12,
+            "wis": 15,
+            "cha": 11,
+            "skill": {
+                "medicine": "+4",
+                "nature": "+3",
+                "perception": "+4"
+            },
+            "passive": 14,
+            "languages": [
+                "Druidic plus any two languages"
+            ],
+            "cr": "2",
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
+                    ],
+                    "spells": {
+                        "0": {
+                            "spells": [
+                                "{@spell druidcraft}",
+                                "{@spell produce flame}",
+                                "{@spell infestation|xge}"
+                            ]
+                        },
+                        "1": {
+                            "slots": 4,
+                            "spells": [
+                                "{@spell faerie fire}",
+                                "{@spell entangle}",
+                                "{@spell speak with animals}",
+                                "{@spell fog cloud}"
+                            ]
+                        },
+                        "2": {
+                            "slots": 3,
+                            "spells": [
+                                "{@spell spike growth}",
+                                "{@spell moonbeam}"
+                            ]
+                        }
+                    },
+                    "ability": "wis"
+                }
+            ],
+            "action": [
+                {
+                    "name": "Quarterstaff",
+                    "entries": [
+                        "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if wielded with two hands."
+                    ]
+                }
+            ],
+            "soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/142/druid.mp3",
+            "altArt": [
+                {
+                    "name": "Demonic Druid",
+                    "source": "MTF",
+                    "page": 29
+                }
+            ],
+            "languageTags": [
+                "DU",
+                "X"
+            ],
+            "damageTags": [
+                "B"
+            ],
+            "spellcastingTags": [
+                "CD"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "fluff": {
+                "name": "Druid Naturalist",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "A variation on druids, these Naturalists hit hard from the back."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary/MM/Druid.jpg"
+                        }
+                    }
+                ]
+            },
+            "tokenUrl": "https://5e.tools/img/MM/Druid.png?v=1.99.2"
+        },
+        {
+            "name": "Svarog, Druid Elder",
+            "source": "CurseofStrahdCustom",
+            "size": "M",
+            "type": {
+                "type": "human"
+            },
+            "alignment": [
+                "N",
+                "E"
+            ],
+            "ac": [
+                11,
+                {
+                    "ac": 16,
+                    "condition": "while in his cocoon",
+                    "braces": true
+                }
+            ],
+            "hp": {
+                "average": 39,
+                "formula": "7d8 + 7"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 8,
+            "dex": 12,
+            "con": 13,
+            "int": 12,
+            "wis": 17,
+            "cha": 12,
+            "skill": {
+                "medicine": "+6",
+                "nature": "+4",
+                "perception": "+6"
+            },
+            "passive": 16,
+            "languages": [
+                "Common, Druidic"
+            ],
+            "cr": "5",
+            "spellcasting": [
+                {
+                    "name": "Spellcasting",
+                    "headerEntries": [
+                        "Svarog is a 7th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). He has the following druid spells prepared:"
+                    ],
+                    "spells": {
+                        "0": {
+                            "spells": [
+                                "{@spell Mold Earth|xge}",
+                                "{@spell infestation|xge}",
+                                "{@spell shillelagh}"
+                            ]
+                        },
+                        "1": {
+                            "slots": 4,
+                            "spells": [
+                                "{@spell thunderwave}",
+                                "{@spell ice knife|xge}",
+                                "{@spell entangle}",
+                                "{@spell fog cloud}"
+                            ]
+                        },
+                        "2": {
+                            "slots": 3,
+                            "spells": [
+                                "{@spell moonbeam}",
+                                "{@spell gust of wind}"
+                            ]
+                        },
+                        "3": {
+                            "slots": 3,
+                            "spells": [
+                                "{@spell call lightning}",
+                                "{@spell plant growth}",
+                                "{@spell erupting earth|xge}"
+                            ]
+                        },
+                        "4": {
+                            "slots": 1,
+                            "spells": [
+                                "{@spell wall of fire}"
+                            ]
+                        }
+                    },
+                    "ability": "wis"
+                }
+            ],
+            "action": [
+                {
+                    "name": "Quarterstaff",
+                    "entries": [
+                        "{@atk mw} {@hit 2} to hit ({@hit 4} to hit with shillelagh), reach 5 ft., one target. {@h}3 ({@damage 1d6 - 1}) bludgeoning damage, or 8 ({@damage 1d8 + 3}) bludgeoning damage with shillelagh or if wielded with two hands."
+                    ]
+                }
+            ],
+            "languageTags": [
+                "DU",
+                "X"
+            ],
+            "damageTags": [
+                "B"
+            ],
+            "spellcastingTags": [
+                "CD"
+            ],
+            "miscTags": [
+                "MW"
+            ]
+        },
+        {
+            "name": "Gulthias Tree",
+            "source": "CurseofStrahdCustom",
+            "size": "G",
+            "type": {
+                "type": "plant"
+            },
+            "alignment": [
+                "N",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 149,
+                "formula": "13d12 + 65"
+            },
+            "speed": {
+                "walk": 0
+            },
+            "str": 15,
+            "dex": 6,
+            "con": 19,
+            "int": 6,
+            "wis": 11,
+            "cha": 3,
+            "senses": [
+                "blindsight 60 ft. (blind beyond this radius)"
+            ],
+            "passive": 10,
+            "resist": [
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing"
+                    ],
+                    "note": "from nonmagical attacks"
+                }
+            ],
+            "immune": [
+                "necrotic",
+                "psychic"
+            ],
+            "conditionImmune": [
+                "blinded",
+                "charmed",
+                "deafened",
+                "exhaustion",
+                "frightened",
+                "paralyzed",
+                "petrified"
+            ],
+            "languages": [
+                "understands Common and Druidic but doesn't speak"
+            ],
+            "cr": "7",
+            "trait": [
+                {
+                    "name": "False Appearance",
+                    "entries": [
+                        "While the Gulthias Tree remains motionless, it is indistinguishable from a dead tree."
+                    ]
+                },
+                {
+                    "name": "Summon Blights (Lair Action)",
+                    "entries": [
+                        "On initiative count 20 (losing initiative ties), the Gulthias tree uses a lair action to spawn 1d4 Twig Blights among its roots."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The Gulthias Tree makes two attacks with its branches."
+                    ]
+                },
+                {
+                    "name": "Branch",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage."
+                    ]
+                },
+                {
+                    "name": "Grasping Root",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 15 ft., one creature not {@condition grappled} by the tree. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage and the target is {@condition grappled} (escape {@dc 15}). The root has AC 16 and can be severed by dealing 6 slashing damage or more to it at once. Cutting the root doesn't hurt the Gulthias Tree, but ends the grapple."
+                    ]
+                },
+                {
+                    "name": "Frightful Presence (Recharge 5 - 6)",
+                    "entries": [
+                        "Red blood oozes from the pores of the Gulthias Tree as it releases a low, keening moan. Each creature that is within 30 feet of the Gulthias Tree must succeed on a {@dc 15} Wisdom saving throw or become {@condition Frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Gulthias Tree's Frightful Presence for the next 24 hours."
+                    ]
+                }
+            ],
+            "legendary": [
+                {
+                    "name": "Root",
+                    "entries": [
+                        "The Gulthias Tree makes one Grasping Root attack."
+                    ]
+                },
+                {
+                    "name": "Lift",
+                    "entries": [
+                        "The Gulthias Tree can use its roots to lift a creature that is currently grappled by it up to 20 ft. into the air."
+                    ]
+                },
+                {
+                    "name": "Blood Drain",
+                    "entries": [
+                        "Black tendrils extend from the roots of the Gulthias Tree and penetrate the skin of a single creature that is currently grappled by it. That creature must make a {@dc 15} Constitution saving throw. On a failure, that creature takes 7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the Gulthias tree regains Hit Points equal to that amount. The reduction lasts until the target finishes a Long Rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a mindless Vampire Spawn under the control of Strahd von Zarovich."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "False Appearance",
+                "Siege Monster"
+            ],
+            "senseTags": [
+                "B"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "C",
+                "DU"
+            ],
+            "damageTags": [
+                "B",
+                "P"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+            "conditionInflicted": [
+                "grappled"
+            ],
+            "fluff": {
+                "name": "Tree Blight",
+                "source": "CoS",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    {
+                                        "type": "entries",
+                                        "entries": [
+                                            "Blights (as described in the Monster Manual) are evil, ambulatory plant creatures, and a tree blight is a particularly enormous variety. It looks like a dead tree or treant, 30 feet tall, with spongy wooden flesh, thorny branches, and rubbery roots that trail behind it. It has blood for sap and is so saturated with blood that it doesn't catch fire easily.",
+                                            {
+                                                "name": "Vicious Carnivore",
+                                                "type": "entries",
+                                                "entries": [
+                                                    "A tree blight feeds on warm-blooded prey and takes perverse delight in causing carnage. It strikes with its heavy branches and crushes prey to death with its roots. It can open its gaping, tooth-filled mouth and bite a creature caught in its roots. The roots of a tree blight can be severed, though cutting them causes the blight no harm."
+                                                ]
+                                            },
+                                            {
+                                                "name": "Blight Animosity",
+                                                "type": "entries",
+                                                "entries": [
+                                                    "A tree blight will often fight alongside other kinds of blights, but it hates other tree blights and will attack them given the chance. Tree blights also hate treants, and the feeling is mutual."
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "tokenUrl": "https://5e.tools/img/CoS/Tree Blight.png?v=1.99.2",
+            "legendaryActions": 2
+        }
+    ]
+}
